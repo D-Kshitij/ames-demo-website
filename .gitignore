@@ -1,0 +1,11 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore env if any
+.env
+venv/
+env/
+
+# Ignore database config
+app/database.py
