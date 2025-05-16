@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AMES Club Events</title>
+  <link rel="stylesheet" href="ames.css" />
+</head>
+<body class="events-page">
+  <div class="clock" id="clock"></div>
+  <h1 id="greeting"></h1>
+  <div class="event-container" id="events"></div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    let username = params.get("username") || "";
+    document.getElementById("greeting").textContent = `Hey ${username}, here are the upcoming events`;
+
+    const events = [
+      { title: "CAD Workshop", description: "Learn SolidWorks in 3 days!", date: "2025-06-01" },
+      { title: "RC Car Race", description: "Build and race RC cars!", date: "2025-06-10" },
+      { title: "Guest Talk: Dr. M. Sharma", description: "Insights into Mechatronics", date: "2025-06-15" }
+    ];
+
+    const container = document.getElementById("events");
+    events.forEach(ev => {
+      const card = document.createElement("div");
+      card.className = "event-card";
+      card.innerHTML = `<h3>${ev.title}</h3><p>${ev.description}</p><p><strong>Date:</strong> ${ev.date}</p>`;
+      container.appendChild(card);
+    });
+
+    function updateClock() {
+      const now = new Date();
+      const timeStr = now.toLocaleTimeString();
+      document.getElementById("clock").textContent = timeStr;
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
+</body>
+</html>
