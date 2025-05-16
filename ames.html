@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ames Club Login</title>
+  <link rel="stylesheet" href="ames.css">
+</head>
+<body class="login-page">
+  <div class="login-container">
+    <h1>Welcome to AMES Club</h1>
+    <img src="AMES_LOGO.png" alt="AMES Logo" class="logo" />
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Email" required />
+      <br />
+      <input type="password" id="password" placeholder="Password" required />
+      <br />
+      <button type="submit">Login</button>
+    </form>
+    <p id="message"></p>
+    <div id="greeting"></div>
+    <div id="clock" style="display: none;"></div>
+  </div>
+  <script src="ames.js"></script>
+</body>
+</html>
