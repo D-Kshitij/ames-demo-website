@@ -1,6 +1,3 @@
-Here’s an updated and refined version of your README that includes the details about the SQL database integration and the login flow you described:
-
----
 
 # AMES Demo Website
 
