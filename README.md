@@ -35,9 +35,6 @@ This is a simple demo website created as part of the AMES Club recruitment assig
 * I intentionally kept the frontend clean and minimal. Since I’m still learning, I used **AI tools (like ChatGPT)** for guidance and support.
 
 ---
-Here’s a polished version of what you can add to your README to clearly explain the current status and usage instructions:
-
----
 ## Backend Structure
 The app folder contains all backend-related code, databases, and configurations.
 
