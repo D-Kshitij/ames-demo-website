@@ -38,6 +38,30 @@ This is a simple demo website created as part of the AMES Club recruitment assig
 * I intentionally kept the frontend clean and minimal. Since I’m still learning, I used **AI tools (like ChatGPT)** for guidance and support.
 
 ---
+Here’s a polished version of what you can add to your README to clearly explain the current status and usage instructions:
+
+---
+
+## Note on Frontend and Backend Setup
+
+I noticed the setup isn’t fully working correctly here on GitHub for this repo.
+For a better frontend experience, please check out my separate frontend repository:
+
+👉 [ames-frontend](https://github.com/D-Kshitij/ames-frontend)
+
+You can test the frontend live using GitHub Pages from that repo. Since the backend is not yet hosted, the frontend works independently.
+
+### How to access pages on GitHub Pages:
+
+* For the **login page:**
+  `https://d-kshitij.github.io/ames-frontend/ames.html`
+
+* For the **events page:**
+  `https://d-kshitij.github.io/ames-frontend/events.html`
+
+---
+
+
 
 ## ⚙️ Tech Stack
 
