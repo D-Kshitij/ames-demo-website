@@ -38,6 +38,12 @@ This is a simple demo website created as part of the AMES Club recruitment assig
 Here’s a polished version of what you can add to your README to clearly explain the current status and usage instructions:
 
 ---
+## Backend Structure
+The app folder contains all backend-related code, databases, and configurations.
+
+Inside app, the routers/ames directory provides the core backend functionality required for this project.
+
+Other files and folders inside app are related to my personal projects and not essential for the basic setup.
 
 ## Note on Frontend and Backend Setup
 
