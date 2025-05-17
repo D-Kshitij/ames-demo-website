@@ -1,36 +1,65 @@
-# ames-demo-website
-# AMES Demo Website
-
-This is a simple demo website for the AMES Club recruitment assignment. The project includes a login page and an events page built with **HTML, CSS, and JavaScript** on the frontend and a **FastAPI** backend handling the logic and authentication.
-
-## 🧠 Focus Areas
-
-- The main focus of this project was backend development.
-- I’ve implemented API routes using **FastAPI** for login functionality and time display.
-- The backend is designed to connect with a shared database from my other FastAPI projects (though that part is excluded from this public repo for security reasons).
-
-## 💻 Frontend
-
-- The frontend includes a basic login page and an events page that displays upcoming events.
-- I’ve used basic **HTML/CSS/JS**, and yes — I used **AI tools (like ChatGPT)** to guide and assist me in writing the frontend code.
-- It’s intentionally kept simple and functional — not trying to over-polish something I’m still learning.
-
-## 🔐 Security Note
-
-- This repo excludes any sensitive files (like the database config) using `.gitignore`.
-
-## ⚙️ Tech Stack
-
-- **Backend**: FastAPI (Python)
-- **Frontend**: HTML, CSS, JavaScript
-- **Version Control**: Git + GitHub
-
-## 🚀 How to Run (Locally)
-
-1. Clone the repo
-2. Run the FastAPI backend (e.g. with `uvicorn`)
-3. Open the `ames.html` file in a browser
+Here’s an updated and refined version of your README that includes the details about the SQL database integration and the login flow you described:
 
 ---
 
-I focused on understanding backend logic and clean API design while using AI to bridge gaps in my frontend experience.
+# AMES Demo Website
+
+This is a simple demo website created as part of the AMES Club recruitment assignment. It showcases a minimal login system and an events page — with a **FastAPI backend** and a **basic HTML/CSS/JavaScript frontend**.
+
+---
+
+## 🧠 Focus Areas
+
+* The main focus of this project is **backend development**.
+* I implemented **API routes using FastAPI** for:
+
+  * User login functionality.
+  * Displaying the current server time.
+* I used a **SQL database** (from a larger personal FastAPI project I’m developing) and integrated it here for user authentication.
+* The backend handles user validation and redirects users to the events page upon successful login.
+
+---
+
+## 🔐 Example Login
+
+* **User ID:** `xyz1@gmail.com`
+* **Password:** `abcd`
+* Logging in with these credentials will grant access to the events page showing upcoming activities.
+
+---
+
+## 💻 Frontend
+
+* The frontend includes:
+
+  * A simple **login page**.
+  * An **events page** that displays a list of upcoming events.
+* Built with **HTML, CSS, and JavaScript**.
+* I intentionally kept the frontend clean and minimal. Since I’m still learning, I used **AI tools (like ChatGPT)** for guidance and support.
+
+---
+
+## ⚙️ Tech Stack
+
+* **Backend:** FastAPI (Python)
+* **Database:** SQL (via a shared DB setup from my other FastAPI projects)
+* **Frontend:** HTML, CSS, JavaScript
+* **Version Control:** Git + GitHub
+
+---
+
+## 🚀 How to Run (Locally)
+
+1. Clone the repo.
+2. Run the FastAPI backend (e.g., using `uvicorn main:app --reload`).
+3. Open the `ames.html` file in your browser to access the frontend.
+
+---
+
+## 🔒 Security Note
+
+* Sensitive files (e.g., database configuration and credentials) are excluded using `.gitignore`.
+* Only example credentials are shown; real users and passwords are stored securely in the SQL backend.
+
+---
+
